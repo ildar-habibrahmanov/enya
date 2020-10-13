@@ -1,0 +1,86 @@
+@media ( min-width: 1200px )
+  .container
+    border: 1px solid red
+  .menu
+    &-mobile
+      display: none
+    &-button
+      display: none
+  .mobile-profile
+    display: none
+@media ( max-width: 1200px )
+  .container
+    max-width: 1140px
+    border: 1px solid blue
+  .menu
+    &-mobile
+      display: none
+    &-button
+      display: none
+  .mobile-profile
+    display: none
+  .hero
+    &__flex
+      // background-position: calc(100vw - #{$bgImgWidth} - #{$bgImgPaddingLeft}) calc(100vh - #{$bgImgHeight} - #{$bgImgPaddingTop})
+      padding-top: 6%
+      padding-left: 4%
+@media ( max-width: 768px )
+  .container
+    max-width: 728px
+    border: 1px solid green
+  .header
+    margin-bottom: 15px
+    &__flex
+      max-width: 650px
+  .menu
+    &-display
+      display: none
+    &-button
+      display: flex
+      width: 24px
+      height: 18px
+      padding: 0
+      align-items: center
+      justify-content: space-between
+      flex-direction: column
+      border: none
+      background-color: #fff
+      cursor: pointer
+      outline: none
+      &__line
+        width: 24px
+        height: 2.2px
+        background-color: #3A4C66
+  .hero
+    &__flex
+      padding-top: 36px
+      padding-left: 28px
+      background-position: calc(100vw - #{$bgImgWidth} - #{$bgImgPaddingLeft}) calc(100vh - #{$bgImgHeight} - #{$bgImgPaddingTop})
+    &-main
+      width: 407px
+      &__title
+        font-size: 48px
+        line-height: 60px
+        margin-bottom: 5px
+      &__text
+        font-size: 18px
+        line-height: 32px
+      &__link-button
+        margin-top: 19px
+@media ( max-width: 320px )
+  .container
+    man-width: 320px
+  .header
+    &__flex
+      man-width: 272px
+  .hero
+    &__flex
+      padding-top: 380px
+    &-main
+      width: 100%
+      &__title
+        font-size: 32px
+        line-height: 40px
+      &__text
+        font-size: 16px
+        line-height: 28px
