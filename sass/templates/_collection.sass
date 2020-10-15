@@ -1,0 +1,36 @@
+.collection
+  max-height: 490px
+  margin-bottom: 145px
+  &__grid
+    display: grid
+    grid-template-columns: 320px 320px 1fr
+    grid-template-rows: 230px 230px
+    grid-gap: 30px
+    grid-template-areas: "c-card-img-l c-card-img-s-1 c-card-text" "c-card-img-l c-card-img-s-2 c-card-text";
+.c
+  &-card
+    &-1
+      grid-area: c-card-img-l
+      overflow: hidden
+      width: 320px
+      height: auto
+      object-fit: contain
+    &-2
+      grid-area: c-card-img-s-1
+      overflow: hidden
+      width: 320px
+      height: 230px
+      object-fit: contain
+    &-3
+      grid-area: c-card-img-s-2
+      overflow: hidden
+      width: 320px
+      height: 230px
+      object-fit: contain
+    &-4
+      grid-area: c-card-text
+      overflow: hidden
+      display: flex
+      align-items: center
+      flex-direction: column
+      justify-content: space-between
