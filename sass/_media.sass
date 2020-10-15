@@ -19,11 +19,8 @@
     &-button
       display: none
   .mobile-profile
-    // display: none
   .hero
     &__flex
-      // background-position: calc(100vw - #{$bgImgWidth} - #{$bgImgPaddingLeft}) calc(100vh - #{$bgImgHeight} - #{$bgImgPaddingTop})
-      // background-position: right -9em bottom 1em
       padding-top: 6%
       padding-left: 4%
 @media ( max-width: 768px )
@@ -143,6 +140,20 @@
       margin-right: 22px
     &-text
       margin-right: 0px
+  .collection
+    &__grid
+      grid-template-columns: 322px 320px
+      grid-template-rows: 230px 230px 277px
+      grid-template-areas: "c-card-img-l c-card-img-s-1" "c-card-img-l c-card-img-s-2" "c-card-text c-card-text"
+      justify-content: center
+    &__title
+      margin-left: 0px
+    &__text
+      margin-left: -1px
+      width: 100%
+    &__link
+      margin-top: 23px
+      margin-left: -1px
 @media ( max-width: 728px )
   .header
     &__flex
@@ -163,7 +174,7 @@
       padding-top: 200px
       padding-left: 20px
       padding-right: 20px
-      height: 800px
+      height: auto
     &-main
       width: 100%
       align-items: center
@@ -174,6 +185,54 @@
         text-align: center
       &__promo
         flex-wrap: wrap
+  .collection
+    &__grid
+      grid-template-columns: 138px 138px
+      grid-template-rows: 300px 97px 302px
+      grid-template-areas: "c-card-img-l c-card-img-l" "c-card-img-s-1 c-card-img-s-2" "c-card-text c-card-text"
+      grid-gap: 14px
+    &__title
+      margin-top: 18px
+      margin-left: 0px
+      font-size: 28px
+      line-height: 36px
+    &__text
+      margin-top: 24px
+      margin-left: 5px
+      width: 96%
+      font-size: 16px
+      line-height: 28px
+    &__link
+      margin-top: 23px
+      margin-left: -1px
+    &__card
+      &-image
+        // object-fit: contain
+        // object-position: center top
+        max-width: none
+        // border-radius: 8px
+        &-1
+          transform: scale(0.53, 0.53) translate(-257px, -422px)
+        &-2
+          transform: scale(0.25, 0.25) translate(-919px, -1311px)
+        &-3
+          transform: scale(0.25, 0.25) translate(-848px, -1306px)
+  .c
+    &-card
+      &-1
+        background-color: #DEDCDD
+        width: auto
+        border-radius: 4px
+      &-2
+        width: auto
+        height: auto
+        border-radius: 4px
+      &-3
+        width: auto
+        height: auto
+        border-radius: 4px
+      &-4
+        text-align: center
 @media ( max-width: 320px )
   .container
     // max-width: 90%
@@ -251,5 +310,51 @@
     &-text
       margin-right: 0
       line-height: 38px
-
-      
+  .collection
+    &__grid
+      grid-template-columns: 138px 138px
+      grid-template-rows: 300px 97px 302px
+      grid-template-areas: "c-card-img-l c-card-img-l" "c-card-img-s-1 c-card-img-s-2" "c-card-text c-card-text"
+      grid-gap: 14px
+    &__title
+      margin-top: 18px
+      margin-left: 0px
+      font-size: 28px
+      line-height: 36px
+    &__text
+      margin-top: 24px
+      margin-left: 5px
+      width: 96%
+      font-size: 16px
+      line-height: 28px
+    &__link
+      margin-top: 23px
+      margin-left: -1px
+    &__card
+      &-image
+        // object-fit: contain
+        // object-position: center top
+        max-width: none
+        // border-radius: 8px
+        &-1
+          transform: scale(0.53, 0.53) translate(-257px, -422px)
+        &-2
+          transform: scale(0.25, 0.25) translate(-919px, -1311px)
+        &-3
+          transform: scale(0.25, 0.25) translate(-848px, -1306px)
+  .c
+    &-card
+      &-1
+        background-color: #DEDCDD
+        width: auto
+        border-radius: 4px
+      &-2
+        width: auto
+        height: auto
+        border-radius: 4px
+      &-3
+        width: auto
+        height: auto
+        border-radius: 4px
+      &-4
+        text-align: center

@@ -6,7 +6,59 @@
     grid-template-columns: 320px 320px 1fr
     grid-template-rows: 230px 230px
     grid-gap: 30px
-    grid-template-areas: "c-card-img-l c-card-img-s-1 c-card-text" "c-card-img-l c-card-img-s-2 c-card-text";
+    grid-template-areas: "c-card-img-l c-card-img-s-1 c-card-text" "c-card-img-l c-card-img-s-2 c-card-text"
+  &__title
+    @include hk-grotesk-mixin
+    font-style: normal
+    font-weight: bold
+    font-size: 48px
+    line-height: 60px
+    letter-spacing: 0.2px
+    color: $primaryTextColor
+    margin-block-start: 0
+    margin-block-end: 0
+    margin-inline-start: 0
+    margin-inline-end: 0
+    margin-top: 1px
+    margin-left: 29px
+  &__text
+    font-family: $openSans
+    font-style: normal
+    font-weight: normal
+    font-size: 20px
+    line-height: 36px
+    color: $secondaryTextColor
+    margin-left: 29px
+    margin-block-start: 0
+    margin-block-end: 0
+    margin-top: 31px
+    width: 360px
+  &__link
+    font-family: $openSans
+    font-style: normal
+    font-weight: bold
+    font-size: 18px
+    line-height: 25px
+    color: $linkColor
+    text-decoration: none
+    margin-top: 40px
+    margin-left: 29px
+    &:hover
+      color: $secondaryTextColor
+  &__icon
+    margin-left: 20px
+  &__card
+    &-image
+      // object-fit: contain
+      // object-position: center top
+      max-width: none
+      // border-radius: 8px
+      &-1
+        transform: scale(0.65, 0.65) translate(-183px, -199px)
+      &-2
+        transform: scale(0.57, 0.57) translate(-238px, -467px)
+      &-3
+        transform: scale(0.57, 0.57) translate(-209px, -464px)
 .c
   &-card
     &-1
@@ -14,23 +66,23 @@
       overflow: hidden
       width: 320px
       height: auto
-      object-fit: contain
+      border-radius: 8px
     &-2
       grid-area: c-card-img-s-1
       overflow: hidden
       width: 320px
       height: 230px
-      object-fit: contain
+      border-radius: 8px
     &-3
       grid-area: c-card-img-s-2
       overflow: hidden
       width: 320px
       height: 230px
-      object-fit: contain
+      border-radius: 8px
     &-4
       grid-area: c-card-text
       overflow: hidden
       display: flex
-      align-items: center
+      align-items: flex-start
       flex-direction: column
-      justify-content: space-between
+      // justify-content: space-between
