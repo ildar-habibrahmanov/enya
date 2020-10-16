@@ -4,25 +4,28 @@ var testimonialSlider = new Swiper('.testimonial-slider', {
   loop: true,
   pagination: {
     el: '.testimonial-slider__pagination',
+    clickable: true,
   },
   initialSlide: 1,
-  autoplay: {
-    delay: testimonialSliderDelay,
-  },
+  // bulletElement: ".testimonial-slider_bullet"
+  // autoplay: {
+  //   delay: testimonialSliderDelay,
+  // },
 });
 
-const testimonialSliderArea = document.getElementById('testimonial-slider');
+// const testimonialSliderArea = document.getElementById('testimonial-slider');
 
-testimonialSliderArea.addEventListener('mouseover', function () {
-  // console.log("testimonialSlider stop: ", testimonialSlider.autoplay.running);
-  testimonialSlider.autoplay.stop();
-});
+// testimonialSliderArea.addEventListener('mouseover', function () {
+//   // console.log("testimonialSlider stop: ", testimonialSlider.autoplay.running);
+//   testimonialSlider.autoplay.stop();
+// });
 
-testimonialSliderArea.addEventListener('mouseout', function () {
-  // console.log("testimonialSlider stop: ", testimonialSlider.autoplay.running);
-  testimonialSlider.autoplay.start();
-});
+// testimonialSliderArea.addEventListener('mouseout', function () {
+//   // console.log("testimonialSlider stop: ", testimonialSlider.autoplay.running);
+//   testimonialSlider.autoplay.start();
+// });
 
+// mobile menu
 const mobileMenuButtonArray = document.querySelectorAll("button[data-mobile='menu-button']"),
       mobileMenu = document.getElementById('menu-mobile');
 
