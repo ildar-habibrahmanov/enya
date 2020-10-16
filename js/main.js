@@ -23,9 +23,8 @@ testimonialSliderArea.addEventListener('mouseout', function () {
   testimonialSlider.autoplay.start();
 });
 
-const mobileMenuButtonArray = document.querySelectorAll("button[data-mobile='menu-button']")
-// const mobileMenuButtonClose = document.getElementById("menu-button-close")
-const mobileMenu = document.getElementById('menu-mobile');
+const mobileMenuButtonArray = document.querySelectorAll("button[data-mobile='menu-button']"),
+      mobileMenu = document.getElementById('menu-mobile');
 
 mobileMenuButtonArray.forEach(function (element) {
   element.addEventListener('click', function () {
@@ -33,6 +32,19 @@ mobileMenuButtonArray.forEach(function (element) {
   });
 });
 
-// mobileMenuButtonClose.addEventListener('click', function(){
-//   mobileMenu.classList.toggle('menu-mobile--visible');
-// });
+// tabs
+const trendsItemArray = document.querySelectorAll(".trends__category"),
+      trendsSortArray = document.querySelectorAll(".trends__sort");
+trendsItemArray.forEach(function (element) {
+  element.addEventListener('click', function() {
+    let activeContent = document.getElementById(this.dataset.target);
+    trendsItemArray.forEach(function (e) {
+      e.classList.remove("trends__category-active")
+    })
+    trendsSortArray.forEach(function (e) {
+      e.classList.remove("trends__sort-active")
+    })
+    this.classList.toggle("trends__category-active");
+    activeContent.classList.add("trends__sort-active");
+  })
+});

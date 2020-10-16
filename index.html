@@ -148,130 +148,357 @@
     </section>
     <!-- /.collection -->
 
-    <section style="display: none" class="trends">
+    <section class="trends">
       <div class="container">
-        <div class="trends__grid">
+        <div class="trends__flex">
           <div class="trends__header">
             <h2 class="trends__title">Тренды</h2>
             <div class="trends__categories">
-              <span class="trends__category">Новинки</span>
-              <span class="trends__category">Лучшее</span>
-              <span class="trends__category">Скоро</span>
+              <span data-target="newest" class="trends__category trends__category-active">Новинки</span>
+              <span data-target="best" class="trends__category">Лучшее</span>
+              <span data-target="soon" class="trends__category">Скоро</span>
             </div>
           </div>
           <!-- /.trends__header -->
-          <div class="t-card">
-            <div class="t-card__main">
-              <img
-                class="t-card__image image-set-scale- image-set-margin- image-set-size-"
-                src="img/trending-card-1.jpg"
-              />
+          <div id="newest" class="trends__sort trends__sort-newest trends__sort-active">
+            <div class="t-card">
+              <div class="t-card__main">
+                <img
+                  class="t-card__image image-set-scale- image-set-margin- image-set-size-"
+                  src="img/trending-card-1.jpg"
+                />
+              </div>
+              <!-- /.t-card__main -->
+              <div class="t-card__footer">
+                <h3 class="t-card__title">Minimalist Style</h3>
+                <span class="t-card__price">$25.7</span><a href="#" class="t-card__link"><i class="fas fa-shopping-cart t-card__icon"></a></i>
+              </div>
+              <!-- /.t-card__footer -->
             </div>
-            <!-- /.t-card__main -->
-            <div class="t-card__footer">
-              <h3 class="t-card__title">Minimalist Style</h3>
-              <span class="t-card__price">$25.7</span><span class="t-card__icon"></span>
+            <!-- /.t-card -->
+            <div class="t-card">
+              <div class="t-card__main">
+                <img
+                  class="t-card__image image-set-scale- image-set-margin- image-set-size-"
+                  src="img/trending-card-2.jpg"
+                />
+              </div>
+              <!-- /.t-card__main -->
+              <div class="t-card__footer">
+                <h3 class="t-card__title">Luxury Gown</h3>
+                <span class="t-card__price">$30.6</span><a href="#" class="t-card__link"><i class="fas fa-shopping-cart t-card__icon"></a></i>
+              </div>
+              <!-- /.t-card__footer -->
             </div>
-            <!-- /.t-card__footer -->
+            <!-- /.t-card -->
+            <div class="t-card">
+              <div class="t-card__main">
+                <img
+                  class="t-card__image image-set-scale- image-set-margin- image-set-size-"
+                  src="img/trending-card-3.jpg"
+                />
+              </div>
+              <!-- /.t-card__main -->
+              <div class="t-card__footer">
+                <h3 class="t-card__title">Full Coloristy</h3>
+                <span class="t-card__price">$25.7</span><a href="#" class="t-card__link"><i class="fas fa-shopping-cart t-card__icon"></a></i>
+              </div>
+              <!-- /.t-card__footer -->
+            </div>
+            <!-- /.t-card -->
+            <div class="t-card">
+              <div class="t-card__main">
+                <img
+                  class="t-card__image image-set-scale- image-set-margin- image-set-size-"
+                  src="img/trending-card-4.jpg"
+                />
+              </div>
+              <!-- /.t-card__main -->
+              <div class="t-card__footer">
+                <h3 class="t-card__title">Pinky Winky</h3>
+                <span class="t-card__price">$109</span><a href="#" class="t-card__link"><i class="fas fa-shopping-cart t-card__icon"></a></i>
+              </div>
+              <!-- /.t-card__footer -->
+            </div>
+            <!-- /.t-card -->
+            <div class="t-card">
+              <div class="t-card__main">
+                <img
+                  class="t-card__image image-set-scale- image-set-margin- image-set-size-"
+                  src="img/trending-card-5.jpg"
+                />
+              </div>
+              <!-- /.t-card__main -->
+              <div class="t-card__footer">
+                <h3 class="t-card__title">Holiday Vibes</h3>
+                <span class="t-card__price">$51.2</span><a href="#" class="t-card__link"><i class="fas fa-shopping-cart t-card__icon"></a></i>
+              </div>
+              <!-- /.t-card__footer -->
+            </div>
+            <!-- /.t-card -->
+            <div class="t-card">
+              <div class="t-card__main">
+                <img
+                  class="t-card__image image-set-scale- image-set-margin- image-set-size-"
+                  src="img/trending-card-6.jpg"
+                />
+              </div>
+              <!-- /.t-card__main -->
+              <div class="t-card__footer">
+                <h3 class="t-card__title">Swaggie Shaggy</h3>
+                <span class="t-card__price">$81.3</span><a href="#" class="t-card__link"><i class="fas fa-shopping-cart t-card__icon"></a></i>
+              </div>
+              <!-- /.t-card__footer -->
+            </div>
+            <!-- /.t-card -->
+            <div class="t-card">
+              <div class="t-card__main">
+                <img
+                  class="t-card__image image-set-scale- image-set-margin- image-set-size-"
+                  src="img/trending-card-7.jpg"
+                />
+              </div>
+              <!-- /.t-card__main -->
+              <div class="t-card__footer">
+                <h3 class="t-card__title">Red Formal</h3>
+                <span class="t-card__price">$66.8</span><a href="#" class="t-card__link"><i class="fas fa-shopping-cart t-card__icon"></a></i>
+              </div>
+              <!-- /.t-card__footer -->
+            </div>
+            <!-- /.t-card -->
+            <div class="t-card">
+              <div class="t-card__main t-card__more"><i class="fas fa-plus t-card__more-icon"></i> <span class="t-card__more-text">Смотреть больше коллекций</span></div>
+              <!-- /.t-card__main -->
+            </div>
+            <!-- /.t-card -->
           </div>
-          <!-- /.t-card -->
-          <div class="t-card">
-            <div class="t-card__main">
-              <img
-                class="t-card__image image-set-scale- image-set-margin- image-set-size-"
-                src="img/trending-card-2.jpg"
-              />
+          <!-- /.trends__sort newest-->
+          <div id="best" class="trends__sort trends__sort-best">
+            <div class="t-card">
+              <div class="t-card__main">
+                <img
+                  class="t-card__image image-set-scale- image-set-margin- image-set-size-"
+                  src="img/trending-card-6.jpg"
+                />
+              </div>
+              <!-- /.t-card__main -->
+              <div class="t-card__footer">
+                <h3 class="t-card__title">Swaggie Shaggy</h3>
+                <span class="t-card__price">$81.3</span><a href="#" class="t-card__link"><i class="fas fa-shopping-cart t-card__icon"></a></i>
+              </div>
+              <!-- /.t-card__footer -->
             </div>
-            <!-- /.t-card__main -->
-            <div class="t-card__footer">
-              <h3 class="t-card__title">Luxury Gown</h3>
-              <span class="t-card__price">$30.6</span><span class="t-card__icon"></span>
+            <!-- /.t-card -->
+            <div class="t-card">
+              <div class="t-card__main">
+                <img
+                  class="t-card__image image-set-scale- image-set-margin- image-set-size-"
+                  src="img/trending-card-1.jpg"
+                />
+              </div>
+              <!-- /.t-card__main -->
+              <div class="t-card__footer">
+                <h3 class="t-card__title">Minimalist Style</h3>
+                <span class="t-card__price">$25.7</span><a href="#" class="t-card__link"><i class="fas fa-shopping-cart t-card__icon"></a></i>
+              </div>
+              <!-- /.t-card__footer -->
             </div>
-            <!-- /.t-card__footer -->
+            <!-- /.t-card -->
+            <div class="t-card">
+              <div class="t-card__main">
+                <img
+                  class="t-card__image image-set-scale- image-set-margin- image-set-size-"
+                  src="img/trending-card-5.jpg"
+                />
+              </div>
+              <!-- /.t-card__main -->
+              <div class="t-card__footer">
+                <h3 class="t-card__title">Holiday Vibes</h3>
+                <span class="t-card__price">$51.2</span><a href="#" class="t-card__link"><i class="fas fa-shopping-cart t-card__icon"></a></i>
+              </div>
+              <!-- /.t-card__footer -->
+            </div>
+            <!-- /.t-card -->
+            <div class="t-card">
+              <div class="t-card__main">
+                <img
+                  class="t-card__image image-set-scale- image-set-margin- image-set-size-"
+                  src="img/trending-card-4.jpg"
+                />
+              </div>
+              <!-- /.t-card__main -->
+              <div class="t-card__footer">
+                <h3 class="t-card__title">Pinky Winky</h3>
+                <span class="t-card__price">$109</span><a href="#" class="t-card__link"><i class="fas fa-shopping-cart t-card__icon"></a></i>
+              </div>
+              <!-- /.t-card__footer -->
+            </div>
+            <!-- /.t-card -->
+            <div class="t-card">
+              <div class="t-card__main">
+                <img
+                  class="t-card__image image-set-scale- image-set-margin- image-set-size-"
+                  src="img/trending-card-7.jpg"
+                />
+              </div>
+              <!-- /.t-card__main -->
+              <div class="t-card__footer">
+                <h3 class="t-card__title">Red Formal</h3>
+                <span class="t-card__price">$66.8</span><a href="#" class="t-card__link"><i class="fas fa-shopping-cart t-card__icon"></a></i>
+              </div>
+              <!-- /.t-card__footer -->
+            </div>
+            <!-- /.t-card -->
+            <div class="t-card">
+              <div class="t-card__main">
+                <img
+                  class="t-card__image image-set-scale- image-set-margin- image-set-size-"
+                  src="img/trending-card-3.jpg"
+                />
+              </div>
+              <!-- /.t-card__main -->
+              <div class="t-card__footer">
+                <h3 class="t-card__title">Full Coloristy</h3>
+                <span class="t-card__price">$25.7</span><a href="#" class="t-card__link"><i class="fas fa-shopping-cart t-card__icon"></a></i>
+              </div>
+              <!-- /.t-card__footer -->
+            </div>
+            <!-- /.t-card -->
+            <div class="t-card">
+              <div class="t-card__main">
+                <img
+                  class="t-card__image image-set-scale- image-set-margin- image-set-size-"
+                  src="img/trending-card-2.jpg"
+                />
+              </div>
+              <!-- /.t-card__main -->
+              <div class="t-card__footer">
+                <h3 class="t-card__title">Luxury Gown</h3>
+                <span class="t-card__price">$30.6</span><a href="#" class="t-card__link"><i class="fas fa-shopping-cart t-card__icon"></a></i>
+              </div>
+              <!-- /.t-card__footer -->
+            </div>
+            <!-- /.t-card -->
+            <div class="t-card">
+              <div class="t-card__main t-card__more"><i class="fas fa-plus t-card__more-icon"></i><span class="t-card__more-text">Смотреть больше коллекций</span></div>
+              <!-- /.t-card__main -->
+            </div>
+            <!-- /.t-card -->
           </div>
-          <!-- /.t-card -->
-          <div class="t-card">
-            <div class="t-card__main">
-              <img
-                class="t-card__image image-set-scale- image-set-margin- image-set-size-"
-                src="img/trending-card-3.jpg"
-              />
+          <!-- /.trends__sort best-->
+          <div id="soon" class="trends__sort trends__sort-soon">
+            <div class="t-card">
+              <div class="t-card__main">
+                <img
+                  class="t-card__image image-set-scale- image-set-margin- image-set-size-"
+                  src="img/trending-card-5.jpg"
+                />
+              </div>
+              <!-- /.t-card__main -->
+              <div class="t-card__footer">
+                <h3 class="t-card__title">Holiday Vibes</h3>
+                <span class="t-card__price">$51.2</span><a href="#" class="t-card__link"><i class="fas fa-shopping-cart t-card__icon"></a></i>
+              </div>
+              <!-- /.t-card__footer -->
             </div>
-            <!-- /.t-card__main -->
-            <div class="t-card__footer">
-              <h3 class="t-card__title">Full Coloristy</h3>
-              <span class="t-card__price">$25.7</span><span class="t-card__icon"></span>
+            <!-- /.t-card -->
+            <div class="t-card">
+              <div class="t-card__main">
+                <img
+                  class="t-card__image image-set-scale- image-set-margin- image-set-size-"
+                  src="img/trending-card-3.jpg"
+                />
+              </div>
+              <!-- /.t-card__main -->
+              <div class="t-card__footer">
+                <h3 class="t-card__title">Full Coloristy</h3>
+                <span class="t-card__price">$25.7</span><a href="#" class="t-card__link"><i class="fas fa-shopping-cart t-card__icon"></a></i>
+              </div>
+              <!-- /.t-card__footer -->
             </div>
-            <!-- /.t-card__footer -->
+            <!-- /.t-card -->
+            <div class="t-card">
+              <div class="t-card__main">
+                <img
+                  class="t-card__image image-set-scale- image-set-margin- image-set-size-"
+                  src="img/trending-card-6.jpg"
+                />
+              </div>
+              <!-- /.t-card__main -->
+              <div class="t-card__footer">
+                <h3 class="t-card__title">Swaggie Shaggy</h3>
+                <span class="t-card__price">$81.3</span><a href="#" class="t-card__link"><i class="fas fa-shopping-cart t-card__icon"></a></i>
+              </div>
+              <!-- /.t-card__footer -->
+            </div>
+            <!-- /.t-card -->
+            <div class="t-card">
+              <div class="t-card__main">
+                <img
+                  class="t-card__image image-set-scale- image-set-margin- image-set-size-"
+                  src="img/trending-card-1.jpg"
+                />
+              </div>
+              <!-- /.t-card__main -->
+              <div class="t-card__footer">
+                <h3 class="t-card__title">Minimalist Style</h3>
+                <span class="t-card__price">$25.7</span><a href="#" class="t-card__link"><i class="fas fa-shopping-cart t-card__icon"></a></i>
+              </div>
+              <!-- /.t-card__footer -->
+            </div>
+            <!-- /.t-card -->
+            <div class="t-card">
+              <div class="t-card__main">
+                <img
+                  class="t-card__image image-set-scale- image-set-margin- image-set-size-"
+                  src="img/trending-card-7.jpg"
+                />
+              </div>
+              <!-- /.t-card__main -->
+              <div class="t-card__footer">
+                <h3 class="t-card__title">Red Formal</h3>
+                <span class="t-card__price">$66.8</span><a href="#" class="t-card__link"><i class="fas fa-shopping-cart t-card__icon"></a></i>
+              </div>
+              <!-- /.t-card__footer -->
+            </div>
+            <!-- /.t-card -->
+            <div class="t-card">
+              <div class="t-card__main">
+                <img
+                  class="t-card__image image-set-scale- image-set-margin- image-set-size-"
+                  src="img/trending-card-4.jpg"
+                />
+              </div>
+              <!-- /.t-card__main -->
+              <div class="t-card__footer">
+                <h3 class="t-card__title">Pinky Winky</h3>
+                <span class="t-card__price">$109</span><a href="#" class="t-card__link"><i class="fas fa-shopping-cart t-card__icon"></a></i>
+              </div>
+              <!-- /.t-card__footer -->
+            </div>
+            <!-- /.t-card -->
+            <div class="t-card">
+              <div class="t-card__main">
+                <img
+                  class="t-card__image image-set-scale- image-set-margin- image-set-size-"
+                  src="img/trending-card-2.jpg"
+                />
+              </div>
+              <!-- /.t-card__main -->
+              <div class="t-card__footer">
+                <h3 class="t-card__title">Luxury Gown</h3>
+                <span class="t-card__price">$30.6</span><a href="#" class="t-card__link"><i class="fas fa-shopping-cart t-card__icon"></a></i>
+              </div>
+              <!-- /.t-card__footer -->
+            </div>
+            <!-- /.t-card -->
+            <div class="t-card">
+              <div class="t-card__main t-card__more"><i class="fas fa-plus t-card__more-icon"></i> <span class="t-card__more-text">Смотреть больше коллекций</span></div>
+              <!-- /.t-card__main -->
+            </div>
+            <!-- /.t-card -->
           </div>
-          <!-- /.t-card -->
-          <div class="t-card">
-            <div class="t-card__main">
-              <img
-                class="t-card__image image-set-scale- image-set-margin- image-set-size-"
-                src="img/trending-card-4.jpg"
-              />
-            </div>
-            <!-- /.t-card__main -->
-            <div class="t-card__footer">
-              <h3 class="t-card__title">Pinky Winky</h3>
-              <span class="t-card__price">$109</span><span class="t-card__icon"></span>
-            </div>
-            <!-- /.t-card__footer -->
-          </div>
-          <!-- /.t-card -->
-          <div class="t-card">
-            <div class="t-card__main">
-              <img
-                class="t-card__image image-set-scale- image-set-margin- image-set-size-"
-                src="img/trending-card-5.jpg"
-              />
-            </div>
-            <!-- /.t-card__main -->
-            <div class="t-card__footer">
-              <h3 class="t-card__title">Holiday Vibes</h3>
-              <span class="t-card__price">$51.2</span><span class="t-card__icon"></span>
-            </div>
-            <!-- /.t-card__footer -->
-          </div>
-          <!-- /.t-card -->
-          <div class="t-card">
-            <div class="t-card__main">
-              <img
-                class="t-card__image image-set-scale- image-set-margin- image-set-size-"
-                src="img/trending-card-6.jpg"
-              />
-            </div>
-            <!-- /.t-card__main -->
-            <div class="t-card__footer">
-              <h3 class="t-card__title">Swaggie Shaggy</h3>
-              <span class="t-card__price">$81.3</span><span class="t-card__icon"></span>
-            </div>
-            <!-- /.t-card__footer -->
-          </div>
-          <!-- /.t-card -->
-          <div class="t-card">
-            <div class="t-card__main">
-              <img
-                class="t-card__image image-set-scale- image-set-margin- image-set-size-"
-                src="img/trending-card-7.jpg"
-              />
-            </div>
-            <!-- /.t-card__main -->
-            <div class="t-card__footer">
-              <h3 class="t-card__title">Red Format</h3>
-              <span class="t-card__price">$66.8</span><span class="t-card__icon"></span>
-            </div>
-            <!-- /.t-card__footer -->
-          </div>
-          <!-- /.t-card -->
-          <div class="t-card">
-            <div class="t-card__main">+ Смотреть больше коллекций</div>
-            <!-- /.t-card__main -->
-            <div class="t-card__footer"></div>
-            <!-- /.t-card__footer -->
-          </div>
-          <!-- /.t-card -->
+          <!-- /.trends__sort soon-->
         </div>
         <!-- /.trends__grid -->
       </div>
